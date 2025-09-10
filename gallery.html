@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>گالری - کتابخانه اشعار فارسی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">کتابخانه اشعار فارسی</a>
+      <nav>
+        <button id="navToggle3" class="nav-toggle" aria-label="نمایش منو">☰</button>
+        <ul class="navbar" id="navbar3">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a class="active" href="gallery.html">گالری</a></li>
+          <li><a href="poems.html">اشعار</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+          <li><button id="themeToggle3" class="theme-btn">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content-card">
+      <h1>گالری تصاویر</h1>
+      <p>روی تصاویر کلیک کنید تا بزرگ شوند.</p>
+      <div class="gallery-grid">
+        <img class="gallery-item" src="photo1.jpg" alt="طبیعت ۱" />
+        <img class="gallery-item" src="photo2.jpg" alt="طبیعت ۲" />
+        <img class="gallery-item" src="photo3.jpg" alt="طبیعت ۳" />
+        <img class="gallery-item" src="photo4.jpg" alt="کتاب ۱" />
+        <img class="gallery-item" src="photo5.jpg" alt="کتاب ۲" />
+        <img class="gallery-item" src="photo6.jpg" alt="خطاطی" />
+          <img class="gallery-item" src="photo7.jpg" alt="خطاطی" />  <img class="gallery-item" src="photo8.jpg" alt="خطاطی" />  <img class="gallery-item" src="photo9.jpg" alt="خطاطی" />  <img class="gallery-item" src="photo10.jpg" alt="خطاطی" />
+      </div>
+      <div id="lightbox" class="lightbox">
+        <span class="lb-close" id="lbClose">×</span>
+        <img id="lbImg" src="" alt="" />
+        <div id="lbCaption" class="lb-caption"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© neda.sediqi 2025 کتابخانه اشعار فارسی</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
