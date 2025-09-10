@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>اشعار - کتابخانه اشعار فارسی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">کتابخانه اشعار فارسی</a>
+    <nav>
+      <button id="navToggle4" class="nav-toggle" aria-label="نمایش منو">☰</button>
+      <ul class="navbar" id="navbar4">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="gallery.html">گالری</a></li>
+        <li><a class="active" href="poems.html">اشعار</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <li><button id="themeToggle4" class="theme-btn">🌙</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="content-card" id="filters">
+    <h1>کتابخانه اشعار فارسی</h1>
+
+    <div class="controls">
+      <input id="search" type="text" placeholder="جستجو بر اساس متن یا نام شاعر..." />
+      <select id="poetFilter">
+        <option value="">همه شاعران</option>
+        <option value="حافظ">حافظ</option>
+        <option value="سعدی">سعدی</option>
+        <option value="مولانا">مولانا</option>
+        <option value="خیام">خیام</option>
+        <option value="نظامی">نظامی</option>
+        <option value="باباطاهر">باباطاهر</option>
+        <option value="شهریار">شهریار</option>
+        <option value="فروغ">فروغ</option>
+        <option value="نیما">نیما</option>
+      </select>
+      <button class="btn" id="clearFilters">پاکسازی</button>
+      <button class="btn ghost" id="showFavorites">علاقه‌مندی‌ها</button>
+    </div>
+
+    <div id="fal" class="fal-box card">
+      <h3>فال حافظ </h3>
+      <p id="falText">برای دریافت فال روی دکمه کلیک کن؛ هر بار یک فال جدید می‌آید.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <button class="btn small" id="playFal">گرفتن فال</button>
+        <button class="btn small" id="saveFalFavorite">ذخیره فال در علاقه‌مندی</button>
+      </div>
+    </div>
+
+    <div id="poemsList" class="poems-list"></div>
+    <div id="noResult" style="display:none;text-align:center;margin-top:12px;">هیچ شعری یافت نشد.</div>
+
+    <div id="pagination" class="controls" style="justify-content:center;margin-top:10px;">
+      <button class="btn small" id="prevPage">▶︎قبلی</button>
+      <span id="pageInfo"></span>
+      <button class="btn small" id="nextPage">بعدی ◀︎</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container"><p>© neda.sediqi 2025 کتابخانه اشعار فارسی</p></div></footer>
+<audio id="falAudio" src="sounds/Idea 20.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
